@@ -9,7 +9,7 @@ CREATE TABLE games(
     rating FLOAT
 );
 
-INSERT INTO games(game_id, title, category, rating)
+INSERT INTO games(id, title, category, rating)
 VALUES(1, 'Zelda', 'openworld', 10),
 	  (2, 'Mario', '3dwolrd', 10),
 	  (3, 'DonkeyKong', 'adventure', 9.8),
