@@ -3,7 +3,7 @@ CREATE DATABASE nintendoswitch;
 USE nintendoswitch;
 
 CREATE TABLE games(
-	game_id INT PRIMARY KEY NOT NULL,
+	id INT PRIMARY KEY NOT NULL,
 	title VARCHAR(50) NOT NULL,
     category VARCHAR(50),
     rating FLOAT
@@ -21,18 +21,18 @@ FROM games;
 
 SELECT *
 FROM games
-WHERE game_id > 1;
+WHERE id > 1;
 
 UPDATE games
-SET game_id = 6
-WHERE game_id = 3;
+SET id = 6
+WHERE id = 3;
 
 UPDATE games
-SET game_id = 3
-WHERE game_id = 6;
+SET id = 3
+WHERE id = 6;
 
 DELETE FROM games
-WHERE game_id = 5; 
+WHERE id = 5; 
 
 SELECT *
 FROM games;
